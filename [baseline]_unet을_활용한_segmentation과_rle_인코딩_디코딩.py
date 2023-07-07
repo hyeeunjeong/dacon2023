@@ -243,7 +243,7 @@ def train():
     for epoch in range(1):  # 10 에폭 동안 학습합니다.
         model.train()
         epoch_loss = 0
-        for images, masks in tqdm(dataloader):
+        for images, masks in tqdm(dataloader): #################
             images = images.float().to(device)
             masks = masks.float().to(device)
 
